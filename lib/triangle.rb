@@ -39,7 +39,9 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    
+    def message
+      "Triangle is invalid. Does not pass triangle inequality, or sides are 0 or less."
+    end
   end
   
 end
