@@ -14,15 +14,11 @@ class Triangle
   end
   
   def is_isosceles?
-    if @all_sides.uniq.length == 2
-      true
-    else
-      false
-    end
+    @all_sides.uniq.length == 2 ? true : false
   end
   
   def is_scalene?
-    if @all_sides.uniq.length == 3
+    @all_sides.uniq.length == 3
       true
     else
       false
