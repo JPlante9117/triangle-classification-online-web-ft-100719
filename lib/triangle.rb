@@ -6,10 +6,11 @@ class Triangle
     @side1 = side1
     @side2 = side2
     @side3 = side3
+    @all_sides = [@side1, @side2, @side3]
   end
   
   def is_equilateral?
-    @side1 == @side2 && @side2 == @side3 ? true : false
+    @all_sides.all? ? true : false
   end
   
   def is_isosceles?
