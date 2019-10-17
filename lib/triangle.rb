@@ -30,7 +30,7 @@ class Triangle
   end
   
   def is_invalid?
-    @side1 + @side2 < @side3 || [@side1, @side2, @side3].include?(0) ? true : false
+    @side1 + @side2 < @side3 || @all_sides.include?(0) ? true : false
   end
   
   def kind
