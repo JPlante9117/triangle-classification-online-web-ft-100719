@@ -19,14 +19,10 @@ class Triangle
   
   def is_scalene?
     @all_sides.uniq.length == 3
-      true
-    else
-      false
-    end
   end
   
   def is_invalid?
-    @side1 + @side2 <= @side3 || @all_sides.any? { |side| side <= 0 }? true : false
+    @all_sides[0] + @all_sides[1] <= @all_sides[2] || @all_sides.any? { |side| side <= 0 }? true : false
   end
   
   def kind
