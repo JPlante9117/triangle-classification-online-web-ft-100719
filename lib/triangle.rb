@@ -30,7 +30,7 @@ class Triangle
   end
   
   def is_invalid?
-    @side1 + @side2 =< @side3 || @all_sides.any? { |side| side <= 0 }? true : false
+    @side1 + @side2 <= @side3 || @all_sides.any? { |side| side <= 0 }? true : false
   end
   
   def kind
