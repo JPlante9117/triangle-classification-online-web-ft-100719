@@ -22,7 +22,7 @@ class Triangle
   end
   
   def is_scalene?
-    if @all_sides.uniq.length = 3
+    if @all_sides.uniq.length == 3
       true
     else
       false
