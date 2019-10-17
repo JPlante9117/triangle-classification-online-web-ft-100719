@@ -33,7 +33,7 @@ class Triangle
   def kind
     #returns either :equilateral, :isoceles, or :scalene
     if is_invalid?
-      
+      raise TriangleError
     elsif is_equilateral?
       :equilateral
     elsif is_isoceles?
