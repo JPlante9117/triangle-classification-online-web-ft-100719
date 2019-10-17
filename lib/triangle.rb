@@ -12,7 +12,7 @@ class Triangle
     @side1 == @side2 && @side2 == @side3 ? true : false
   end
   
-  def is_isoceles?
+  def is_isosceles?
     if (@side1 == @side2 && @side2 != @side3) || (@side1 == @side3 && @side3 != @side2) || (@side2 == @side3 && @side3 != @side1)
       true
     else
@@ -38,8 +38,8 @@ class Triangle
       raise TriangleError
     elsif is_equilateral?
       :equilateral
-    elsif is_isoceles?
-      :isoceles
+    elsif is_isosceles?
+      :isosceles
     elsif is_scalene?
       :scalene
     end
