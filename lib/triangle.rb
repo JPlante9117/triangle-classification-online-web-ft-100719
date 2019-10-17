@@ -10,7 +10,7 @@ class Triangle
   end
   
   def is_equilateral?
-    @all_sides.all? ? true : false
+    @all_sides.all? {|side| side == @side1 } ? true : false
   end
   
   def is_isosceles?
